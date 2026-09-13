@@ -3524,3 +3524,166 @@ main {
     scroll-margin-top: 64px;
   }
 }
+
+/* =========================================================
+   FINAL CORNER FLOWER UPDATE
+   Uses the reference lotus decoration supplied for the page.
+   No other page styling is changed.
+   ========================================================= */
+
+.lotus-corner.bottom {
+  display: block !important;
+  position: absolute;
+  z-index: 8;
+  width: 250px;
+  height: 360px;
+  bottom: -35px;
+  background-image: url('/assets/lotus-reference-transparent.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  pointer-events: none;
+}
+
+/* Hide the old CSS-drawn lotus so only the reference decoration is visible. */
+.lotus-corner.bottom .lotus-flower,
+.lotus-corner.bottom .lotus-leaf {
+  display: none !important;
+}
+
+.lotus-corner.bottom.left {
+  left: -12px;
+  right: auto;
+  transform: none;
+}
+
+.lotus-corner.bottom.right {
+  right: -12px;
+  left: auto;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+@media (max-width: 760px) {
+  .lotus-corner.bottom {
+    width: 175px;
+    height: 255px;
+    bottom: -22px;
+  }
+
+  .lotus-corner.bottom.left {
+    left: -8px;
+  }
+
+  .lotus-corner.bottom.right {
+    right: -8px;
+  }
+}
+
+
+/* =========================================================
+   COUNTDOWN — REFERENCE IMAGE MATCH ONLY
+   Keeps the rest of the page unchanged.
+   ========================================================= */
+
+.countdown-section {
+  min-height: 210px;
+  padding: 14px 20px 18px;
+  background: var(--pink);
+  text-align: center;
+}
+
+.countdown-section .section-script {
+  margin: 0 0 12px;
+  color: var(--maroon);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(42px, 5vw, 56px);
+  line-height: 1;
+}
+
+.countdown-section .countdown-centered {
+  width: min(680px, 100%);
+  min-height: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-section .countdown-figure {
+  display: none;
+}
+
+.countdown-section .countdown-pair {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  align-items: center;
+}
+
+.countdown-section .count-box {
+  position: relative;
+  min-width: 0;
+  color: var(--maroon);
+  text-align: center;
+  padding: 0 18px;
+}
+
+.countdown-section .count-box + .count-box {
+  border-left: 2px solid rgba(142, 47, 78, 0.8);
+}
+
+.countdown-section .count-box strong {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 6vw, 62px);
+  line-height: .9;
+  font-weight: 500;
+}
+
+.countdown-section .count-box span {
+  display: block;
+  margin-top: 8px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1;
+  letter-spacing: .08em;
+}
+
+/* Keep the same four-column reference layout even on narrow screens. */
+@media (max-width: 760px) {
+  .countdown-section {
+    min-height: 210px;
+    padding: 14px 8px 18px;
+  }
+
+  .countdown-section .section-script {
+    margin-bottom: 13px;
+    font-size: clamp(34px, 7vw, 50px);
+    white-space: nowrap;
+  }
+
+  .countdown-section .countdown-pair {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .countdown-section .count-box {
+    padding: 0 7px;
+  }
+
+  .countdown-section .count-box strong {
+    font-size: clamp(36px, 8vw, 56px);
+  }
+
+  .countdown-section .count-box span {
+    margin-top: 8px;
+    font-size: clamp(14px, 3.2vw, 18px);
+    letter-spacing: .08em;
+  }
+
+  .countdown-section .count-box + .count-box {
+    border-left-width: 2px;
+  }
+}
