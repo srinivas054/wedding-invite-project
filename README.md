@@ -1,43 +1,80 @@
-# Aryan & Aarna — Wedding Invitation Homepage
+# 💍 Wedding Invitation Website
 
-A React + Vite + Tailwind recreation of the assignment's reference homepage.
+A modern and elegant wedding invitation homepage recreated using **React.js** as part of the **Front-End Developer Internship Assignment at Code Nimbus Solutions**.
 
-## Run it locally
+The project focuses on accurately recreating the provided wedding invitation design while adding smooth animations, responsive interactions, and a polished user experience.
 
-```bash
-npm install
-npm run dev
-```
+---
 
-Open the URL Vite prints (usually http://localhost:5173).
+## 🌐 Live Website
 
-## Build for production
+> The live website will be deployed using Vercel.
 
-```bash
-npm run build
-```
+**Live Demo:**  
+https://your-project-name.vercel.app
 
-This outputs a static site into `dist/`. `npm run preview` serves that build locally so you can double-check it before deploying.
+---
 
-## Deploy (free, no credit card needed)
+## 📌 Project Overview
 
-### Option A — Vercel (recommended, easiest)
-1. Push this folder to a new GitHub repository.
-2. Go to https://vercel.com, sign in with GitHub, click "Add New Project".
-3. Select your repo. Vercel auto-detects Vite — leave the defaults (Build Command: `npm run build`, Output Directory: `dist`).
-4. Click Deploy. You'll get a live URL like `your-project.vercel.app` in about a minute.
+This project is a React-based recreation of a wedding invitation homepage.
 
+The main goal was to reproduce the visual design, layout, animations, and interactive elements of the provided reference website as accurately as possible.
 
+### ✨ Key Features
 
-## Project structure
+- 🎨 Elegant wedding-themed UI
+- 💑 Couple introduction section
+- 📖 Wedding story section
+- 💌 Wishes section
+- 📅 Wedding event details
+- 🖼️ Wedding gallery
+- ⏳ Live wedding countdown
+- 🎵 Background music control
+- 📍 Location/map interaction
+- 🧭 Fixed navigation bar
+- 🔄 Smooth scrolling between sections
+- ✨ Scroll-based reveal animations
+- 📱 Responsive layout
+- 🌿 Decorative wedding elements and animations
+- 🔗 Footer branding link
 
-```
-index.html            entry HTML
-src/main.jsx          React root
-src/App.jsx           mounts the homepage
-src/WeddingHomepage.jsx   the actual page (all sections live here)
-src/index.css         Tailwind directives
-tailwind.config.js
-postcss.config.js
-vite.config.js
-```
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**
+- **JavaScript (ES6+)**
+- **Vite**
+- **CSS3**
+- **HTML5**
+- **Lucide React Icons**
+
+---
+
+## 📂 Project Structure
+
+```text
+wedding-invite-project/
+│
+├── public/
+│   └── assets/
+│       ├── bride-frame.jpg
+│       ├── couple-reference.png
+│       ├── groom-frame.jpg
+│       └── invitation-logo.svg
+│
+├── src/
+│   ├── App.jsx
+│   ├── WeddingHomepage.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
