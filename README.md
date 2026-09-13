@@ -11,7 +11,7 @@ The project focuses on accurately recreating the provided wedding invitation des
 > The live website will be deployed using Vercel.
 
 **Live Demo:**  
-https://your-project-name.vercel.app
+https://wedding-invite-project-seven.vercel.app/
 
 ---
 
